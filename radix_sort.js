@@ -13,7 +13,6 @@ radixSort(){
     for(let i=0;i < numLength;i++){
         let backet = Array.from({length: 10}).map(()=>[]);
         arr.map((v,index)=>{
-            let backetIndex = getNum(v, i);
             let t = [...String(v)];
             if(t[i] === undefined){
                 backet[0].push(v);
