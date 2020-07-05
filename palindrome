@@ -2,7 +2,6 @@ palindrome(str = "racecar"){
         let flag = true;
         [...str].forEach((v,i,arr)=>{
             ++i;
-            console.info( v + "=" + arr[arr.length - i])
             if(v !== arr[arr.length - i]){
                 flag = false;
             }
